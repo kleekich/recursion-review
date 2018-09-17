@@ -13,9 +13,10 @@ var getElementsByClassName = function(className
   var child = arguments[1];
   
   //If there is no child argument, then this is initial call
-  //We should call document.body
+  //For the initial call, we should start from document.body
   if (child === undefined) {
     var curr = document.body;
+  //Otherwise, we start from child
   } else {
     var curr = child;
   }
